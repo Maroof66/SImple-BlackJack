@@ -5,7 +5,6 @@ module.exports = {
     data: new SlashCommandBuilder()
         .setName('blackjack')
         .setDescription('Play a game of Blackjack'),
-    cooldown: 40,
     async execute(interaction) {
         let url = "https://discord.gg/";
         await interaction.deferReply();
